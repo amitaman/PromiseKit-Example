@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UHJ-xB-WBj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Weather View Controller-->
+        <scene sceneID="GhU-Tg-5Td">
+            <objects>
+                <viewController id="UHJ-xB-WBj" customClass="WeatherViewController" customModule="LloydsAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mbh-jg-7m9"/>
+                        <viewControllerLayoutGuide type="bottom" id="THZ-fi-XuN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HC6-hB-73a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="1cF-su-d3j">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="tintColor" red="0.66992281190000003" green="0.088800153430000001" blue="0.23002291380000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PhO-Gs-lRm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="k8s-Jb-ifu">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="LHv-c3-srH">
+                                            <rect key="frame" x="197" y="438" width="20" height="20"/>
+                                            <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </activityIndicatorView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="LHv-c3-srH" firstAttribute="centerX" secondItem="k8s-Jb-ifu" secondAttribute="centerX" id="6dM-Vu-BBP"/>
+                                        <constraint firstItem="LHv-c3-srH" firstAttribute="centerY" secondItem="k8s-Jb-ifu" secondAttribute="centerY" id="LUE-6G-fYo"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search for a city or location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bWA-qV-ota">
+                                <rect key="frame" x="20" y="52" width="374" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="gw3-kV-4E9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="UHJ-xB-WBj" id="vuF-NC-iZy"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yND-ex-afm">
+                                <rect key="frame" x="97" y="383" width="220" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Los Angeles, CA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pq3-9T-xoK">
+                                <rect key="frame" x="123" y="154" width="168.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHu-yw-PpV">
+                                <rect key="frame" x="177.5" y="208" width="59.5" height="95"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="80"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27j-a3-ter">
+                                <rect key="frame" x="20" y="311" width="374" height="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kQr-0f-0YQ"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pq3-9T-xoK" firstAttribute="top" secondItem="Mbh-jg-7m9" secondAttribute="bottom" constant="110" id="1NU-U6-bvO"/>
+                            <constraint firstItem="NHu-yw-PpV" firstAttribute="top" secondItem="Pq3-9T-xoK" secondAttribute="bottom" constant="25" id="4eX-Gs-jK6"/>
+                            <constraint firstItem="PhO-Gs-lRm" firstAttribute="leading" secondItem="1cF-su-d3j" secondAttribute="leading" id="7At-01-IOj"/>
+                            <constraint firstItem="PhO-Gs-lRm" firstAttribute="bottom" secondItem="1cF-su-d3j" secondAttribute="bottom" id="EOe-iw-PEA"/>
+                            <constraint firstItem="27j-a3-ter" firstAttribute="leading" secondItem="kQr-0f-0YQ" secondAttribute="leading" constant="20" id="HBB-kR-Kme"/>
+                            <constraint firstItem="bWA-qV-ota" firstAttribute="top" secondItem="Mbh-jg-7m9" secondAttribute="bottom" constant="8" id="OSO-bu-bxE"/>
+                            <constraint firstItem="PhO-Gs-lRm" firstAttribute="top" secondItem="1cF-su-d3j" secondAttribute="top" id="RHh-8k-hgb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bWA-qV-ota" secondAttribute="trailing" id="UIO-75-qYQ"/>
+                            <constraint firstItem="bWA-qV-ota" firstAttribute="leading" secondItem="HC6-hB-73a" secondAttribute="leadingMargin" id="VCQ-fB-gvK"/>
+                            <constraint firstItem="kQr-0f-0YQ" firstAttribute="trailing" secondItem="27j-a3-ter" secondAttribute="trailing" constant="20" id="aeT-WI-mdC"/>
+                            <constraint firstAttribute="trailing" secondItem="1cF-su-d3j" secondAttribute="trailing" id="cWj-cI-Zjh"/>
+                            <constraint firstItem="27j-a3-ter" firstAttribute="top" secondItem="NHu-yw-PpV" secondAttribute="bottom" constant="8" symbolic="YES" id="coY-Qd-0Qh"/>
+                            <constraint firstItem="NHu-yw-PpV" firstAttribute="centerX" secondItem="Pq3-9T-xoK" secondAttribute="centerX" id="dBR-gR-Q1v"/>
+                            <constraint firstItem="1cF-su-d3j" firstAttribute="height" secondItem="HC6-hB-73a" secondAttribute="height" id="f3x-uw-RXm"/>
+                            <constraint firstItem="PhO-Gs-lRm" firstAttribute="trailing" secondItem="1cF-su-d3j" secondAttribute="trailing" id="lJB-jo-6Uf"/>
+                            <constraint firstItem="1cF-su-d3j" firstAttribute="leading" secondItem="HC6-hB-73a" secondAttribute="leading" id="rV9-kz-JLT"/>
+                            <constraint firstItem="1cF-su-d3j" firstAttribute="centerY" secondItem="HC6-hB-73a" secondAttribute="centerY" id="xIv-NR-YBv"/>
+                            <constraint firstItem="Pq3-9T-xoK" firstAttribute="centerX" secondItem="HC6-hB-73a" secondAttribute="centerX" id="xcg-hM-EyI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndecator" destination="LHv-c3-srH" id="aXd-Qa-riV"/>
+                        <outlet property="conditionLabel" destination="27j-a3-ter" id="egg-Q7-Ke8"/>
+                        <outlet property="iconImageView" destination="yND-ex-afm" id="0GU-Va-6Yz"/>
+                        <outlet property="placeLabel" destination="Pq3-9T-xoK" id="tLa-ss-1mw"/>
+                        <outlet property="tempLabel" destination="NHu-yw-PpV" id="glK-BI-abB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lTU-hz-6Hc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1010.144927536232" y="-968.30357142857133"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="736" height="1104"/>
+    </resources>
+</document>

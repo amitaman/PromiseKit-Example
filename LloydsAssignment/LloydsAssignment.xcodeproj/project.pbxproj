@@ -1,0 +1,843 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		053CA1ED25FD5487ED681D3C /* Pods_LloydsAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E242015A58ABD6B0DD549DC /* Pods_LloydsAssignment.framework */; };
+		2233D8E4283A8C2400566724 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233D8E3283A8C2400566724 /* WeatherModel.swift */; };
+		2233D8E6283A914100566724 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233D8E5283A914100566724 /* LocationViewModel.swift */; };
+		2233D8E8283A916500566724 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233D8E7283A916500566724 /* WeatherViewModel.swift */; };
+		2233D8EB283A9BA200566724 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2233D8E9283A9BA200566724 /* CoreServices.framework */; };
+		2235A4AF284665D10062631E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235A4AE284665D10062631E /* Constants.swift */; };
+		2254E27B2866FCEE00B6340F /* WeatherAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2254E27A2866FCEE00B6340F /* WeatherAPITest.swift */; };
+		227FB362283BF7B2005408CC /* APIServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227FB361283BF7B2005408CC /* APIServiceManager.swift */; };
+		227FB365283BFC07005408CC /* FileManagerUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227FB364283BFC07005408CC /* FileManagerUtil.swift */; };
+		22D9B7E7283A27F50014CB16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D9B7E6283A27F50014CB16 /* AppDelegate.swift */; };
+		22D9B7E9283A27F50014CB16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D9B7E8283A27F50014CB16 /* SceneDelegate.swift */; };
+		22D9B7EB283A27F50014CB16 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D9B7EA283A27F50014CB16 /* WeatherViewController.swift */; };
+		22D9B7EE283A27F50014CB16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D9B7EC283A27F50014CB16 /* Main.storyboard */; };
+		22D9B7F0283A27F80014CB16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22D9B7EF283A27F80014CB16 /* Assets.xcassets */; };
+		22D9B7F3283A27F80014CB16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D9B7F1283A27F80014CB16 /* LaunchScreen.storyboard */; };
+		22D9B7FE283A27F80014CB16 /* LloydsAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D9B7FD283A27F80014CB16 /* LloydsAssignmentTests.swift */; };
+		22D9B808283A27F90014CB16 /* LloydsAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D9B807283A27F90014CB16 /* LloydsAssignmentUITests.swift */; };
+		22D9B80A283A27F90014CB16 /* LloydsAssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D9B809283A27F90014CB16 /* LloydsAssignmentUITestsLaunchTests.swift */; };
+		5530D99816F5D5A1FCAA7508 /* Pods_LloydsAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEC7E2C853CBFF5A0AFC3F2 /* Pods_LloydsAssignmentTests.framework */; };
+		5832858CD3F894A9BC98AA12 /* Pods_LloydsAssignment_LloydsAssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9E876D9AF4E3750FE76E9B /* Pods_LloydsAssignment_LloydsAssignmentUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22D9B7FA283A27F80014CB16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22D9B7DB283A27F50014CB16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22D9B7E2283A27F50014CB16;
+			remoteInfo = LloydsAssignment;
+		};
+		22D9B804283A27F90014CB16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22D9B7DB283A27F50014CB16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22D9B7E2283A27F50014CB16;
+			remoteInfo = LloydsAssignment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2233D8E3283A8C2400566724 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		2233D8E5283A914100566724 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		2233D8E7283A916500566724 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		2233D8E9283A9BA200566724 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		2233D8EA283A9BA200566724 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		2235A4AE284665D10062631E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2254E27A2866FCEE00B6340F /* WeatherAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPITest.swift; sourceTree = "<group>"; };
+		227FB361283BF7B2005408CC /* APIServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceManager.swift; sourceTree = "<group>"; };
+		227FB364283BFC07005408CC /* FileManagerUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerUtil.swift; sourceTree = "<group>"; };
+		22D9B7E3283A27F50014CB16 /* LloydsAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LloydsAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22D9B7E6283A27F50014CB16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22D9B7E8283A27F50014CB16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		22D9B7EA283A27F50014CB16 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		22D9B7ED283A27F50014CB16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22D9B7EF283A27F80014CB16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22D9B7F2283A27F80014CB16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22D9B7F4283A27F80014CB16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22D9B7F9283A27F80014CB16 /* LloydsAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LloydsAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22D9B7FD283A27F80014CB16 /* LloydsAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LloydsAssignmentTests.swift; sourceTree = "<group>"; };
+		22D9B803283A27F80014CB16 /* LloydsAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LloydsAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22D9B807283A27F90014CB16 /* LloydsAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LloydsAssignmentUITests.swift; sourceTree = "<group>"; };
+		22D9B809283A27F90014CB16 /* LloydsAssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LloydsAssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2300ACD82458B54726262578 /* Pods-LloydsAssignment-LloydsAssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LloydsAssignment-LloydsAssignmentUITests.release.xcconfig"; path = "Target Support Files/Pods-LloydsAssignment-LloydsAssignmentUITests/Pods-LloydsAssignment-LloydsAssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		57A3DCAED51C798BEC21E728 /* Pods-LloydsAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LloydsAssignment.debug.xcconfig"; path = "Target Support Files/Pods-LloydsAssignment/Pods-LloydsAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		5B73CFC16CAFBEFAB7AB8573 /* Pods-LloydsAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LloydsAssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-LloydsAssignmentTests/Pods-LloydsAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5E242015A58ABD6B0DD549DC /* Pods_LloydsAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LloydsAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EEC7E2C853CBFF5A0AFC3F2 /* Pods_LloydsAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LloydsAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF1C9ECFB2D99B6AF90ECF0B /* Pods-LloydsAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LloydsAssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-LloydsAssignmentTests/Pods-LloydsAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		D8D0E5C88899782E031ADF1F /* Pods-LloydsAssignment-LloydsAssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LloydsAssignment-LloydsAssignmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-LloydsAssignment-LloydsAssignmentUITests/Pods-LloydsAssignment-LloydsAssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DA9E876D9AF4E3750FE76E9B /* Pods_LloydsAssignment_LloydsAssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LloydsAssignment_LloydsAssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E83F909667249EA5C2C9582A /* Pods-LloydsAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LloydsAssignment.release.xcconfig"; path = "Target Support Files/Pods-LloydsAssignment/Pods-LloydsAssignment.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22D9B7E0283A27F50014CB16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2233D8EB283A9BA200566724 /* CoreServices.framework in Frameworks */,
+				053CA1ED25FD5487ED681D3C /* Pods_LloydsAssignment.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D9B7F6283A27F80014CB16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5530D99816F5D5A1FCAA7508 /* Pods_LloydsAssignmentTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D9B800283A27F80014CB16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5832858CD3F894A9BC98AA12 /* Pods_LloydsAssignment_LloydsAssignmentUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2233D8C4283A32FD00566724 /* CommonFiles */ = {
+			isa = PBXGroup;
+			children = (
+				22D9B7E6283A27F50014CB16 /* AppDelegate.swift */,
+				22D9B7E8283A27F50014CB16 /* SceneDelegate.swift */,
+				2235A4AE284665D10062631E /* Constants.swift */,
+			);
+			path = CommonFiles;
+			sourceTree = "<group>";
+		};
+		2233D8C5283A73E100566724 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2233D8E7283A916500566724 /* WeatherViewModel.swift */,
+				2233D8E5283A914100566724 /* LocationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2233D8C6283A73F800566724 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2233D8E3283A8C2400566724 /* WeatherModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2233D8C7283A740B00566724 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				22D9B7EA283A27F50014CB16 /* WeatherViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		227FB354283BF6B3005408CC /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				227FB361283BF7B2005408CC /* APIServiceManager.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		227FB363283BFBE4005408CC /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				227FB364283BFC07005408CC /* FileManagerUtil.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		22D9B7DA283A27F50014CB16 = {
+			isa = PBXGroup;
+			children = (
+				22D9B7E5283A27F50014CB16 /* LloydsAssignment */,
+				22D9B7FC283A27F80014CB16 /* LloydsAssignmentTests */,
+				22D9B806283A27F90014CB16 /* LloydsAssignmentUITests */,
+				22D9B7E4283A27F50014CB16 /* Products */,
+				4EF8536594650EDE8340B3AC /* Pods */,
+				D4F2871BA963D949C503337F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		22D9B7E4283A27F50014CB16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22D9B7E3283A27F50014CB16 /* LloydsAssignment.app */,
+				22D9B7F9283A27F80014CB16 /* LloydsAssignmentTests.xctest */,
+				22D9B803283A27F80014CB16 /* LloydsAssignmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22D9B7E5283A27F50014CB16 /* LloydsAssignment */ = {
+			isa = PBXGroup;
+			children = (
+				2233D8C7283A740B00566724 /* ViewController */,
+				2233D8C6283A73F800566724 /* Models */,
+				2233D8C5283A73E100566724 /* ViewModel */,
+				2233D8C4283A32FD00566724 /* CommonFiles */,
+				227FB354283BF6B3005408CC /* NetworkLayer */,
+				227FB363283BFBE4005408CC /* Utility */,
+				22D9B7EC283A27F50014CB16 /* Main.storyboard */,
+				22D9B7EF283A27F80014CB16 /* Assets.xcassets */,
+				22D9B7F1283A27F80014CB16 /* LaunchScreen.storyboard */,
+				22D9B7F4283A27F80014CB16 /* Info.plist */,
+			);
+			path = LloydsAssignment;
+			sourceTree = "<group>";
+		};
+		22D9B7FC283A27F80014CB16 /* LloydsAssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				2254E27A2866FCEE00B6340F /* WeatherAPITest.swift */,
+				22D9B7FD283A27F80014CB16 /* LloydsAssignmentTests.swift */,
+			);
+			path = LloydsAssignmentTests;
+			sourceTree = "<group>";
+		};
+		22D9B806283A27F90014CB16 /* LloydsAssignmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				22D9B807283A27F90014CB16 /* LloydsAssignmentUITests.swift */,
+				22D9B809283A27F90014CB16 /* LloydsAssignmentUITestsLaunchTests.swift */,
+			);
+			path = LloydsAssignmentUITests;
+			sourceTree = "<group>";
+		};
+		4EF8536594650EDE8340B3AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57A3DCAED51C798BEC21E728 /* Pods-LloydsAssignment.debug.xcconfig */,
+				E83F909667249EA5C2C9582A /* Pods-LloydsAssignment.release.xcconfig */,
+				D8D0E5C88899782E031ADF1F /* Pods-LloydsAssignment-LloydsAssignmentUITests.debug.xcconfig */,
+				2300ACD82458B54726262578 /* Pods-LloydsAssignment-LloydsAssignmentUITests.release.xcconfig */,
+				5B73CFC16CAFBEFAB7AB8573 /* Pods-LloydsAssignmentTests.debug.xcconfig */,
+				CF1C9ECFB2D99B6AF90ECF0B /* Pods-LloydsAssignmentTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D4F2871BA963D949C503337F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2233D8E9283A9BA200566724 /* CoreServices.framework */,
+				2233D8EA283A9BA200566724 /* MobileCoreServices.framework */,
+				5E242015A58ABD6B0DD549DC /* Pods_LloydsAssignment.framework */,
+				DA9E876D9AF4E3750FE76E9B /* Pods_LloydsAssignment_LloydsAssignmentUITests.framework */,
+				9EEC7E2C853CBFF5A0AFC3F2 /* Pods_LloydsAssignmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22D9B7E2283A27F50014CB16 /* LloydsAssignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22D9B80D283A27F90014CB16 /* Build configuration list for PBXNativeTarget "LloydsAssignment" */;
+			buildPhases = (
+				7A3216D0EDA4864F3D2824F4 /* [CP] Check Pods Manifest.lock */,
+				22D9B7DF283A27F50014CB16 /* Sources */,
+				22D9B7E0283A27F50014CB16 /* Frameworks */,
+				22D9B7E1283A27F50014CB16 /* Resources */,
+				506DAADBB3283C4711766C44 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LloydsAssignment;
+			productName = LloydsAssignment;
+			productReference = 22D9B7E3283A27F50014CB16 /* LloydsAssignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22D9B7F8283A27F80014CB16 /* LloydsAssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22D9B810283A27F90014CB16 /* Build configuration list for PBXNativeTarget "LloydsAssignmentTests" */;
+			buildPhases = (
+				41DA90F64307531E25B95224 /* [CP] Check Pods Manifest.lock */,
+				22D9B7F5283A27F80014CB16 /* Sources */,
+				22D9B7F6283A27F80014CB16 /* Frameworks */,
+				22D9B7F7283A27F80014CB16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22D9B7FB283A27F80014CB16 /* PBXTargetDependency */,
+			);
+			name = LloydsAssignmentTests;
+			productName = LloydsAssignmentTests;
+			productReference = 22D9B7F9283A27F80014CB16 /* LloydsAssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		22D9B802283A27F80014CB16 /* LloydsAssignmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22D9B813283A27F90014CB16 /* Build configuration list for PBXNativeTarget "LloydsAssignmentUITests" */;
+			buildPhases = (
+				526236F5BBD7DE4DE9F5AC11 /* [CP] Check Pods Manifest.lock */,
+				22D9B7FF283A27F80014CB16 /* Sources */,
+				22D9B800283A27F80014CB16 /* Frameworks */,
+				22D9B801283A27F80014CB16 /* Resources */,
+				411273345A6DE6BA5265C72B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22D9B805283A27F90014CB16 /* PBXTargetDependency */,
+			);
+			name = LloydsAssignmentUITests;
+			productName = LloydsAssignmentUITests;
+			productReference = 22D9B803283A27F80014CB16 /* LloydsAssignmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22D9B7DB283A27F50014CB16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					22D9B7E2283A27F50014CB16 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					22D9B7F8283A27F80014CB16 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 22D9B7E2283A27F50014CB16;
+					};
+					22D9B802283A27F80014CB16 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 22D9B7E2283A27F50014CB16;
+					};
+				};
+			};
+			buildConfigurationList = 22D9B7DE283A27F50014CB16 /* Build configuration list for PBXProject "LloydsAssignment" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22D9B7DA283A27F50014CB16;
+			productRefGroup = 22D9B7E4283A27F50014CB16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22D9B7E2283A27F50014CB16 /* LloydsAssignment */,
+				22D9B7F8283A27F80014CB16 /* LloydsAssignmentTests */,
+				22D9B802283A27F80014CB16 /* LloydsAssignmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22D9B7E1283A27F50014CB16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D9B7F3283A27F80014CB16 /* LaunchScreen.storyboard in Resources */,
+				22D9B7F0283A27F80014CB16 /* Assets.xcassets in Resources */,
+				22D9B7EE283A27F50014CB16 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D9B7F7283A27F80014CB16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D9B801283A27F80014CB16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		411273345A6DE6BA5265C72B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LloydsAssignment-LloydsAssignmentUITests/Pods-LloydsAssignment-LloydsAssignmentUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LloydsAssignment-LloydsAssignmentUITests/Pods-LloydsAssignment-LloydsAssignmentUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LloydsAssignment-LloydsAssignmentUITests/Pods-LloydsAssignment-LloydsAssignmentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41DA90F64307531E25B95224 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LloydsAssignmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		506DAADBB3283C4711766C44 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LloydsAssignment/Pods-LloydsAssignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LloydsAssignment/Pods-LloydsAssignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LloydsAssignment/Pods-LloydsAssignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		526236F5BBD7DE4DE9F5AC11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LloydsAssignment-LloydsAssignmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A3216D0EDA4864F3D2824F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LloydsAssignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22D9B7DF283A27F50014CB16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				227FB365283BFC07005408CC /* FileManagerUtil.swift in Sources */,
+				22D9B7EB283A27F50014CB16 /* WeatherViewController.swift in Sources */,
+				227FB362283BF7B2005408CC /* APIServiceManager.swift in Sources */,
+				2233D8E8283A916500566724 /* WeatherViewModel.swift in Sources */,
+				22D9B7E7283A27F50014CB16 /* AppDelegate.swift in Sources */,
+				2233D8E4283A8C2400566724 /* WeatherModel.swift in Sources */,
+				2233D8E6283A914100566724 /* LocationViewModel.swift in Sources */,
+				22D9B7E9283A27F50014CB16 /* SceneDelegate.swift in Sources */,
+				2235A4AF284665D10062631E /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D9B7F5283A27F80014CB16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D9B7FE283A27F80014CB16 /* LloydsAssignmentTests.swift in Sources */,
+				2254E27B2866FCEE00B6340F /* WeatherAPITest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D9B7FF283A27F80014CB16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D9B80A283A27F90014CB16 /* LloydsAssignmentUITestsLaunchTests.swift in Sources */,
+				22D9B808283A27F90014CB16 /* LloydsAssignmentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22D9B7FB283A27F80014CB16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22D9B7E2283A27F50014CB16 /* LloydsAssignment */;
+			targetProxy = 22D9B7FA283A27F80014CB16 /* PBXContainerItemProxy */;
+		};
+		22D9B805283A27F90014CB16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22D9B7E2283A27F50014CB16 /* LloydsAssignment */;
+			targetProxy = 22D9B804283A27F90014CB16 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		22D9B7EC283A27F50014CB16 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22D9B7ED283A27F50014CB16 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		22D9B7F1283A27F80014CB16 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22D9B7F2283A27F80014CB16 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22D9B80B283A27F90014CB16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22D9B80C283A27F90014CB16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22D9B80E283A27F90014CB16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57A3DCAED51C798BEC21E728 /* Pods-LloydsAssignment.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B38CCZQZKB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LloydsAssignment/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amitaman.LloydsAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22D9B80F283A27F90014CB16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E83F909667249EA5C2C9582A /* Pods-LloydsAssignment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B38CCZQZKB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LloydsAssignment/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amitaman.LloydsAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		22D9B811283A27F90014CB16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B73CFC16CAFBEFAB7AB8573 /* Pods-LloydsAssignmentTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B38CCZQZKB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amitaman.LloydsAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LloydsAssignment.app/LloydsAssignment";
+			};
+			name = Debug;
+		};
+		22D9B812283A27F90014CB16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF1C9ECFB2D99B6AF90ECF0B /* Pods-LloydsAssignmentTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B38CCZQZKB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amitaman.LloydsAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LloydsAssignment.app/LloydsAssignment";
+			};
+			name = Release;
+		};
+		22D9B814283A27F90014CB16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8D0E5C88899782E031ADF1F /* Pods-LloydsAssignment-LloydsAssignmentUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B38CCZQZKB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amitaman.LloydsAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LloydsAssignment;
+			};
+			name = Debug;
+		};
+		22D9B815283A27F90014CB16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2300ACD82458B54726262578 /* Pods-LloydsAssignment-LloydsAssignmentUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B38CCZQZKB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amitaman.LloydsAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LloydsAssignment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22D9B7DE283A27F50014CB16 /* Build configuration list for PBXProject "LloydsAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D9B80B283A27F90014CB16 /* Debug */,
+				22D9B80C283A27F90014CB16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22D9B80D283A27F90014CB16 /* Build configuration list for PBXNativeTarget "LloydsAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D9B80E283A27F90014CB16 /* Debug */,
+				22D9B80F283A27F90014CB16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22D9B810283A27F90014CB16 /* Build configuration list for PBXNativeTarget "LloydsAssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D9B811283A27F90014CB16 /* Debug */,
+				22D9B812283A27F90014CB16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22D9B813283A27F90014CB16 /* Build configuration list for PBXNativeTarget "LloydsAssignmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D9B814283A27F90014CB16 /* Debug */,
+				22D9B815283A27F90014CB16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22D9B7DB283A27F50014CB16 /* Project object */;
+}
