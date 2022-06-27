@@ -19,6 +19,7 @@ class WeatherAPITest: XCTestCase {
     
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+        self.serviceApi = nil
     }
     
     func test_getWeatherSuccessAndFailure() {
@@ -34,8 +35,8 @@ class WeatherAPITest: XCTestCase {
                     //Failure
                     XCTAssertEqual((response as? HTTPURLResponse)?.statusCode, 404)
                 }
-                XCTAssertNotNil(data, "WeatherInfo is not nill")
-                XCTAssertNotNil(response, "response is not nill")
+                XCTAssertNotNil(data, "WeatherInfo is not nil")
+                XCTAssertNotNil(response, "response is not nil")
                 getWeatherExpectation.fulfill()
             }.catch({ error in
                 XCTAssertNotNil(error, "Error occured in get weather")
@@ -56,8 +57,8 @@ class WeatherAPITest: XCTestCase {
                     //Failure
                     XCTAssertEqual((response as? HTTPURLResponse)?.statusCode, 404)
                 }
-                XCTAssertNotNil(data, "WeatherInfo is not nill")
-                XCTAssertNotNil(response, "response is not nill")
+                XCTAssertNotNil(data, "WeatherInfo is not nil")
+                XCTAssertNotNil(response, "response is not nil")
                 getWeatherExpectation.fulfill()
             }.catch({ error in
                 XCTAssertNotNil(error, "Error occured in get weather")
